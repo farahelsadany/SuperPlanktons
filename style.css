@@ -1,0 +1,604 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style:none;
+    text-decoration: none;
+    font-family:'Spectral','Serif';
+}
+body{
+    background-color: white;
+    margin:bottom 0;
+    width: 100%;
+    color: black;
+}
+
+.header{
+    width:100%;
+    height: 100px;
+    display:block;
+    background-color:rgb(19, 15, 15);
+    position: fixed;
+    top:0;
+    border-bottom: 2px green solid;
+    z-index:1;
+}
+
+.inner-header{
+    width:80%;
+    height:100%;
+    display: block;
+    margin:0 auto;
+    float:center;
+}
+
+.logo-container{
+    height:100%;
+    float:left;
+    white-space: nowrap;
+}
+
+.logo-container img{
+    height: 100%;
+    display: inline-block;
+}
+
+
+.inner-header span{
+    height:50%;
+    font-family: 'Spectral', 'serif';
+    font-weight: 900;
+    color:white;
+    font-size: 2em;
+    vertical-align: middle;
+    margin: 0 20px;
+    position: absolute;
+    top:30px;
+}
+
+.inner-header span a{
+    color: white;
+}
+
+
+.navigation{
+    height:100%;
+    float:right;
+    text-align: right;
+    display: block;
+}
+
+.navigation a{
+    height:100%;
+    display:table;
+    float:left;
+    padding:0px 20px;
+    color:white;
+}
+
+.navigation a:hover{
+    color:green;
+    background-color:white;
+}
+
+.navigation a i:hover{
+    color:green;
+}
+
+
+.navigation a li{
+    display:table-cell;
+    vertical-align: middle;
+    font-family: 'Spectral', 'Serif';
+    font-weight: 600;
+}
+
+.navigation li a i{
+    color: white;
+}
+
+.sub-list{
+    display: none;
+}
+
+.navigation li a:hover .sub-list{
+    display: block;
+    position:absolute;
+    background-color: green;
+    margin-top:10px;
+    margin-left: 15px;
+    color: white;
+}
+
+/******************************************MAIN******************************************/
+
+.main{
+    color:black;
+    font-family: 'Spectral', 'Serif';
+    width:100%;
+    height: 5800px;
+    background-color: white;
+    background:radial-gradient(circle at center, green,white,green);
+}
+
+.sub-main{
+    width:75%;
+    height: 100%;
+    border: 3px green solid;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+}
+.content{
+    width:100%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    display: block;
+    position:relative;
+    top: 130px;
+    
+}
+
+.content:last-child{
+    margin-top:-150px;
+    padding: 0;
+}
+
+
+.content:nth-child(3){
+    margin-top: -160px;
+    width:100%;
+    margin-bottom:100px;
+
+}
+
+.content:nth-child(4){
+    margin-top: -200px;
+    border-bottom: none;
+    width: 100%;
+    padding-top: 0;
+
+}
+.content:nth-child(7){
+    width:100%;
+    float: right;
+}
+
+
+.left-content{
+    width:50%;
+    float: left;
+    display: block;
+    height: 100%;
+}
+
+
+.right-content{
+    width:50%;
+    height: 100%;
+    float: right;
+    display: block;
+}
+
+
+
+.left-content .audio{
+    width:52%;
+    height: 85%;
+    display: inline-block;
+    text-align: center;
+    float: left;
+    margin:auto 100px;
+    margin-top: -30px;
+    position: relative;
+    border: 2px black solid;
+    border-radius: 20px;
+    background:radial-gradient(circle at center, white, green);
+}
+
+.audio audio{
+    width:100%;
+
+}
+.box{
+    width:100%;
+    display: block;
+}
+.box img{
+    width:100%;
+
+}
+
+.all-contents{
+    width:100%;
+    float: center;
+    margin:0 auto;
+    display: block;
+    position: relative;
+    top:100px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.all-contents h1{
+    font-family: 'Spectral', 'Serif';
+    border-bottom: 3px green solid;
+    margin-top:200px;
+    margin-bottom:20px;
+    font-size: 2.5em;
+    display: inline-block;
+    text-align: center;
+}
+.all-contents h1:first-child{
+    margin-top:100px
+}
+
+
+/******************************************FOOTER******************************************/
+
+.footer{
+    height: 150px;
+    width:100%;
+    display:block;
+    position: relative;
+    bottom:0;
+    margin-bottom: 0;
+    background-color:rgb(19, 15, 15);
+    color: white;
+    border-top:2px green solid;
+}
+
+.footer .footer{
+    width: 70%;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:0 auto;
+    display: block;
+    padding-bottom:5px;
+    border: none;
+}
+
+
+.footer .footer .footer-logo{
+    height: 100%;
+    width:18%;
+    float:left;
+    display: inline;
+}
+
+.footer-logo img{
+    float: left;
+    height: 100%;
+}
+
+.footer-logo a{
+    color:green;
+}
+
+
+.footer .footer span{
+    text-align: left;
+    margin: 0 ;
+    position: absolute;
+    bottom:60px;
+    left:180px;
+    float: left;
+}
+ .footer .footer span a{
+     color: green;
+     font-family: 'Spectral', 'Serif';
+     font-size: 1.2em;
+ }
+ .footer .footer span a:hover{
+     color:white;
+ }
+
+.footer-nav{
+    width: 40%;
+    height: 100%;
+    float:right;
+    display: inline;
+}
+
+.footer-nav a{
+    color: green;
+}
+
+.footer-nav a:hover{
+    color:white;
+}
+
+.footer-nav li{
+    padding: 4px;
+    font-weight:400;
+    font-family: 'Spectral', serif;
+}
+
+.footer .copyright {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: center;
+    height: 100%;
+    font-size: smaller;
+}
+
+
+/******************************************Survey******************************************/
+.sur-page{
+    width:100%;
+    height:850px;
+}
+
+.sur-pic{
+    width:50%;
+    display: inline-block;
+    text-align: right;
+    align-items: right;
+    float: right;
+    position: relative;
+    top:150px;
+}
+.survey{
+    width:55%;
+    height:650px;
+    margin-top:10px;
+    position:relative;
+    display: block;
+    float: left;
+    align-items: left;
+}
+
+.survey-inside{
+    align-items: left;
+    min-width:70%;
+    height:650px;
+    margin:0;
+    float: left;
+    position: relative;
+    top:50px;
+    border: 2px black solid;
+    border-radius: 10px;
+    background:radial-gradient(circle at center, white, green);
+    display: inline-block;
+
+}
+
+.survey-inside h1{
+    border-bottom: 2px black solid;
+    text-align: center;
+    float: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+.text{
+    padding: 10px 50px 50px 50px;
+    margin: auto;
+}
+
+.survey-inside input , textarea{
+    height:30px;
+    margin: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+select, option{
+    height:30px;
+    margin: 10px;
+    width: 400px;
+    text-align: left;
+    align-items: center;
+}
+
+textarea{
+    min-height: 150px;
+    max-width: 400px;
+    min-width: 400px;
+}
+
+.survey-sp{
+    width: 40%;
+    display: inline-block;
+    left: 0;
+    margin-top:100px;
+    margin-right: 50px;;
+    float: right;
+}
+
+.survey-pic1{
+    width:30%;
+    height: 100%;
+    float: right;
+    display: inline-block;
+}
+
+.survey-sp h3{
+    font-family: 'Spectral', 'Serif';
+}
+
+.center {
+    position: absolute;
+    top: 49%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+
+
+/******************************************Resources******************************************/
+.resources{
+    width: 60%;
+    position: relative;
+    top:100px;
+    display: block;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-left:150px;
+    margin-bottom: 100px;
+}
+
+.resources h2{
+    font-family: 'Spectral', serif;
+    border-bottom: 3px green solid;
+    margin-top:40px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.resources li{
+    color:black;
+    margin:40px;
+    font-size:1.3em;
+}
+
+.resources li a{
+    color:black;
+    font-weight: 600;
+}
+
+.resources li a:hover{
+    color:green;
+}
+
+.resources li a i{
+    color:green;
+}
+
+.resources-sp{
+    width: 40%;
+    display: fixed;
+    left: 0;
+    margin-right: 50px;
+    margin-top:200px;
+    float: right;
+    font-family:'Spectral','Serif';
+}
+
+/******************************************Mission & Vission******************************************/
+
+/*****header******/
+
+
+.main-about{
+    width:100%;
+    position: relative;
+    top: 40px;
+}
+
+.board{
+    width:75%;
+    float: center;
+    align-items: center;
+    margin: 30px auto;
+    display: block;
+    text-align: center;    
+}
+
+.board h2{
+    text-align: center;
+    margin: 10px auto;
+    font-family: 'Spectral', serif;
+    font-size: 2em;
+    display: inline-block;
+    border-bottom: green solid 3px;
+}
+
+.paragraph p{
+    padding:20px;
+    font-family: 'Spectral', 'Serif';
+    font-size: 1.2em;
+    font-weight:bolder;
+}
+.main-about .three{
+    width:100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.main-about .three .farah{
+    width:30%;
+    height: 100%;
+    float:left;
+    text-align: center;
+}
+
+
+.main-about .three .rewan{
+    width:30%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:0 auto;
+    display: inline-block;
+
+}
+
+.main-about .three .raneem{
+    width:30%;
+    height: 100%;
+    float:right;
+    text-align: center;
+}
+.main-about .three img{
+    border: 2px green solid;
+}
+.main-about .two{
+    position: relative;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.loogy{
+    width:50%;
+    height:100%;
+    float: left;
+}
+
+.malak{
+    width:50%;
+    height:100%;
+    float: right;
+}
+.main-about .two img{
+    border: green solid 2px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.main-about .board span{
+    font-family: Spectral;
+    font-weight: bold ;
+    padding: 5px;
+    display: block;
+}
+
+.main-about .board span:first-child{
+    font-weight: bolder;
+    font-size: large;
+}
+.main-about .board span:last-child{
+    color: green;
+    font-size: medium;
+}
